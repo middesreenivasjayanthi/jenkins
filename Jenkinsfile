@@ -31,7 +31,7 @@ environment {
                 }    
             }
         }
-        stage ('gitbranches')
+        stage ('gitbranches') {
             steps {
                 script {
                     git ls-remote
@@ -39,8 +39,5 @@ environment {
                 }
             }
         }
-                    
-                    
-            
-    }
-}
+    } 
+} 
