@@ -5,7 +5,7 @@ pipeline {
         stage ('gitbranches') {
             steps {
                   
-                    git ls-remote origin jenkins
+                    git ls-remote
 
 
 
