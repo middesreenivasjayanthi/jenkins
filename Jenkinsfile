@@ -31,5 +31,16 @@ environment {
                 }    
             }
         }
+        stage ('gitbranches')
+            steps {
+                script {
+                    git ls-remote
+                    
+                }
+            }
+        }
+                    
+                    
+            
     }
 }
