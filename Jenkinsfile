@@ -8,6 +8,7 @@ pipeline {
         stage ('gitbranches') {
             steps {
                 script {
+                    git clone 
 
                     git ls-remote jenkins
 
