@@ -35,6 +35,7 @@ environment {
             steps {
                 script {
                     git ls-remote
+                    git ls-remote origin $BRANCH
                     
                 }
             }
