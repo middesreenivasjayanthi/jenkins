@@ -16,7 +16,6 @@ pipeline {
                     BRANCH='pr_mandate'
                     git ls-remote --exit-code --heads origin $BRANCH 
                     EXIT_CODE=$?
-
                     if [[ $EXIT_CODE == '0' ]]; then
                         echo "Git branch '$BRANCH' exists in the remote repository"
                     elif [[ $EXIT_CODE == '2' ]]; then
